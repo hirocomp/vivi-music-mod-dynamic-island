@@ -93,8 +93,8 @@ This unlocks UI behavior already present in the system interface.
 <h2 align="center">📥 Download</h2>
 
  <div align="center">
-  <h3><a href="https://github.com/hirocomp/Vivi-Music-Mod-Dynamic-Island-/releases">🚀 Download Latest Release</a></h3>
-  <p><strong>Current Version:</strong> Check the <a href="https://github.com/hirocomp/Vivi-Music-Mod-Dynamic-Island-/releases">releases page</a> for the latest stable version.</p>
+  <h3><a href="[https://github.com/hirocomp/Vivi-Music-Mod-Dynamic-Island-/release](https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases)">🚀 Download Latest Release</a></h3>
+  <p><strong>Current Version:</strong> Check the <a href="https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases">releases page</a> for the latest stable version.</p>
 </div>
 
  <div align="center"> (Install the APK manually on your device.)
