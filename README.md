@@ -145,7 +145,13 @@ This unlocks UI behavior already present in the system interface.
     <tr>
       <td align="center">
         <h3>📥 Download & Installation</h3>
-        <p>This mod requires manual installation via APK. Check for regular updates on the releases page.</p>
+        <p>🎉 New Feature: Automatic Updates!
+
+Good news! The VIVI Music Dynamic Island Mod now supports automatic updates.
+
+You no longer need to manually download and install every new release. The mod can now automatically check for and install available updates, making it easier to stay up to date with the latest improvements and fixes.
+
+Enjoy a more convenient update experience! 🚀.</p>
         <br>
         <a href="https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases">
           <img src="https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge&logo=github&logoColor=white" alt="Download Release">
