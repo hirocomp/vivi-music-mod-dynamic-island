@@ -1,485 +1,238 @@
-::: {align="center"}
-`<a href="https://github.com/hirocomp/vivi-music-mod-dynamic-island">`{=html}
-`<img src="https://github.com/vivizzz007/vivi-music/blob/main/fastlane/metadata/android/en-US/images/icon.png?raw=true" alt="VIVI Music" width="160"/>`{=html}
-`</a>`{=html} `<br>`{=html}
-```{=html}
-<h1>
-```
-VIVI Music -- Dynamic Island Mod
-```{=html}
-</h1>
-```
-```{=html}
-<h3>
-```
-Enable Dynamic Island features on supported Android devices
-```{=html}
-</h3>
-```
-```{=html}
-<p>
-```
-`<img src="https://img.shields.io/badge/Status-Modified%20Build-blue?style=for-the-badge" alt="Modified Build">`{=html}
-`<img src="https://img.shields.io/badge/Updates-Manual-orange?style=for-the-badge" alt="Manual Updates">`{=html}
-```{=html}
-</p>
-```
-:::
+<div align="center">
+  <a href="https://vivimusic.mkmdevilmi.workers.dev/">
+    <img src="https://github.com/vivizzz007/vivi-music/blob/main/fastlane/metadata/android/en-US/images/icon.png?raw=true" width="160" height="160" style="display: block; margin: 0 auto"/>
+  </a>
+  <br>
+  <h1>VIVI Music — Dynamic Island Mod</h1>
+  <h3>Enable Dynamic Island features on supported Android devices</h3>
 
-```{=html}
+  <p>
+    <a href="https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases">
+      <img src="https://img.shields.io/github/v/release/hirocomp/vivi-music-mod-dynamic-island?label=Download&style=for-the-badge&color=4CAF50" alt="Download Latest">
+    </a>
+    <img src="https://img.shields.io/badge/Status-Modified%2520Build-blue?style=for-the-badge" alt="Modified Build">
+    <img src="https://img.shields.io/badge/Updates-Manual-orange?style=for-the-badge" alt="Manual Updates">
+    <a href="LICENSE">
+      <img src="https://img.shields.io/github/license/vivizzz007/vivi-music?style=for-the-badge" alt="License">
+    </a>
+  </p>
+</div>
+
 <hr>
-```
-## 🎵 About VIVI Music
 
-This project is a modified version of **VIVI Music** that enables
-**Dynamic Island support** on selected Android devices.
+<h2>🎵 About the Mod</h2>
 
-The mod allows supported device software to recognize VIVI Music as an
-app compatible with its Dynamic Island-style interface. It does not
-simulate or emulate the feature; it unlocks UI behavior already present
-in the system interface.
-
-The original VIVI Music project can be found here: [**VIVI Music --
-Original Repository**](https://github.com/vivizzz007/vivi-music)
-
-> **🎵 Your music, your aesthetic --- with Dynamic Island support.**
-
-```{=html}
-<hr>
-```
-## ✨ What this Mod Does
-
-```{=html}
 <table align="center" width="100%">
-```
-```{=html}
-<tr valign="top">
-```
-```{=html}
-<td width="50%">
-```
-```{=html}
-<h3>
-```
-📱 Dynamic Island Support
-```{=html}
-</h3>
-```
-```{=html}
-<ul>
-```
-```{=html}
-<li>
-```
-Enables the Dynamic Island-style popup on supported devices.
-```{=html}
-</li>
-```
-```{=html}
-<li>
-```
-Makes the system recognize VIVI Music as a compatible app.
-```{=html}
-</li>
-```
-```{=html}
-<li>
-```
-Works on supported Chinese and Global ROMs, depending on the device
-brand.
-```{=html}
-</li>
-```
-```{=html}
-</ul>
-```
-```{=html}
-</td>
-```
-```{=html}
-<td width="50%">
-```
-```{=html}
-<h3>
-```
-🛡️ Simple Installation
-```{=html}
-</h3>
-```
-```{=html}
-<ul>
-```
-```{=html}
-<li>
-```
-No root access required.
-```{=html}
-</li>
-```
-```{=html}
-<li>
-```
-Based on the latest public source code of VIVI Music.
-```{=html}
-</li>
-```
-```{=html}
-<li>
-```
-Updates are currently installed manually unless otherwise stated.
-```{=html}
-</li>
-```
-```{=html}
-</ul>
-```
-```{=html}
-</td>
-```
-```{=html}
-</tr>
-```
-```{=html}
+  <tr valign="middle">
+    <td width="60%" align="left">
+      <p>✨ This is a modified version of the <b>VIVI Music</b> application engineered to bring <b>Dynamic Island support</b> to selected Android devices[cite: 2]. Powered by a responsive design engine, it makes your system treat VIVI Music as a native compatible app[cite: 2] without requiring root access[cite: 2].</p>
+      <p>Enjoy all the core features of VIVI Music—such as ad-free streaming, Material You dynamic theming, synced lyrics, and local caching—while unlocking system-level Dynamic Island popups on supported Chinese and Global ROMs[cite: 2].</p>
+      <blockquote>
+        <b>🎵 Your music, your aesthetic, now with Dynamic Island integration.</b>
+      </blockquote>
+    </td>
+    <td width="40%" align="center">
+      <p>🛡️ <b>100% Privacy-First</b><br><small>Completely local database. Absolutely zero trackers, analytics, or background telemetry.</small></p>
+      <hr width="80%">
+      <p>🧩 <b>Dynamic Island</b><br><small>Seamless integration with system-level interactive music notifications.</small></p>
+      <hr width="80%">
+      <p>🚀 <b>Root-Free</b><br><small>Works out of the box on compatible stock firmware without complex modifications.</small></p>
+    </td>
+  </tr>
 </table>
-```
-```{=html}
-<hr>
-```
-## 📱 Compatibility
 
-```{=html}
+<hr>
+
+<h2>📱 Compatibility Matrix</h2>
+
 <table align="center" width="100%">
-```
-```{=html}
-<tr>
-```
-```{=html}
-<th align="left">
-```
-Device / ROM
-```{=html}
-</th>
-```
-```{=html}
-<th align="center">
-```
-Global ROM
-```{=html}
-</th>
-```
-```{=html}
-<th align="center">
-```
-China ROM
-```{=html}
-</th>
-```
-```{=html}
-</tr>
-```
-```{=html}
-<tr>
-```
-```{=html}
-<td>
-```
-`<b>`{=html}Xiaomi`</b>`{=html}
-```{=html}
-</td>
-```
-```{=html}
-<td align="center">
-```
-Yes ✅
-```{=html}
-</td>
-```
-```{=html}
-<td align="center">
-```
-Yes ✅
-```{=html}
-</td>
-```
-```{=html}
-</tr>
-```
-```{=html}
-<tr>
-```
-```{=html}
-<td>
-```
-`<b>`{=html}Honor`</b>`{=html}
-```{=html}
-</td>
-```
-```{=html}
-<td align="center">
-```
-Yes ✅
-```{=html}
-</td>
-```
-```{=html}
-<td align="center">
-```
-Yes ✅
-```{=html}
-</td>
-```
-```{=html}
-</tr>
-```
-```{=html}
-<tr>
-```
-```{=html}
-<td>
-```
-`<b>`{=html}Vivo / IQOO`</b>`{=html}
-```{=html}
-</td>
-```
-```{=html}
-<td align="center">
-```
-Limited ⚠️
-```{=html}
-</td>
-```
-```{=html}
-<td align="center">
-```
-Yes ✅
-```{=html}
-</td>
-```
-```{=html}
-</tr>
-```
-```{=html}
-<tr>
-```
-```{=html}
-<td>
-```
-`<b>`{=html}Oppo`</b>`{=html}
-```{=html}
-</td>
-```
-```{=html}
-<td align="center">
-```
-Limited ⚠️
-```{=html}
-</td>
-```
-```{=html}
-<td align="center">
-```
-Yes ✅
-```{=html}
-</td>
-```
-```{=html}
-</tr>
-```
-```{=html}
-<tr>
-```
-```{=html}
-<td>
-```
-`<b>`{=html}OnePlus`</b>`{=html}
-```{=html}
-</td>
-```
-```{=html}
-<td align="center">
-```
-Limited ⚠️
-```{=html}
-</td>
-```
-```{=html}
-<td align="center">
-```
-Yes ✅
-```{=html}
-</td>
-```
-```{=html}
-</tr>
-```
-```{=html}
-<tr>
-```
-```{=html}
-<td>
-```
-`<b>`{=html}Realme`</b>`{=html}
-```{=html}
-</td>
-```
-```{=html}
-<td align="center">
-```
-No ❌
-```{=html}
-</td>
-```
-```{=html}
-<td align="center">
-```
-Yes ✅
-```{=html}
-</td>
-```
-```{=html}
-</tr>
-```
-```{=html}
+  <tr>
+    <th align="center">Device / ROM</th>
+    <th align="center">Global ROM</th>
+    <th align="center">China ROM</th>
+  </tr>
+  <tr>
+    <td align="center">Xiaomi</td>
+    <td align="center">Yes ✅[cite: 2]</td>
+    <td align="center">Yes ✅[cite: 2]</td>
+  </tr>
+  <tr>
+    <td align="center">Honor</td>
+    <td align="center">Yes ✅[cite: 2]</td>
+    <td align="center">Yes ✅[cite: 2]</td>
+  </tr>
+  <tr>
+    <td align="center">Vivo / IQOO</td>
+    <td align="center">Limited ⚠️[cite: 2]</td>
+    <td align="center">Yes ✅[cite: 2]</td>
+  </tr>
+  <tr>
+    <td align="center">Oppo</td>
+    <td align="center">Limited ⚠️[cite: 2]</td>
+    <td align="center">Yes ✅[cite: 2]</td>
+  </tr>
+  <tr>
+    <td align="center">OnePlus</td>
+    <td align="center">Limited ⚠️[cite: 2]</td>
+    <td align="center">Yes ✅[cite: 2]</td>
+  </tr>
+  <tr>
+    <td align="center">Realme</td>
+    <td align="center">No ❌[cite: 2]</td>
+    <td align="center">Yes ✅[cite: 2]</td>
+  </tr>
 </table>
-```
-```{=html}
-<p align="center">
-```
-`<i>`{=html}Compatibility may vary by device and software
-version.`</i>`{=html}
-```{=html}
-</p>
-```
-> **💬 Help improve compatibility information:** If your device works
-> even though it is listed as unsupported, or does not work while listed
-> as supported, please report it in
-> [Issues](https://github.com/hirocomp/vivi-music-mod-dynamic-island/issues).
 
-```{=html}
+<blockquote>
+  <p><strong>Help improve accuracy:</strong> If your device works even though listed as unsupported, or does not work while listed as supported, please report it in Issues[cite: 2].</p>
+</blockquote>
+
 <hr>
-```
-## 🛠️ How It Works
 
-No features are simulated or emulated. Instead, the mod allows the phone
-to **recognize VIVI Music as an app that supports Dynamic Island**. This
-unlocks UI behavior that is already present in the system interface.
+<h2>🛠️ How It Works</h2>
 
-```{=html}
+<p>
+No features are simulated or emulated. Instead, the phone is allowed to
+<strong>recognize VIVI Music as an app that supports Dynamic Island</strong>[cite: 2].
+This unlocks UI behavior already present in the system interface[cite: 2].
+</p>
+
 <hr>
-```
-## 📥 Download
 
-::: {align="center"}
-```{=html}
-<h3>
-```
-`<a href="https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases">`{=html}🚀
-Download Latest Release`</a>`{=html}
-```{=html}
-</h3>
-```
-```{=html}
-<p>
-```
-`<strong>`{=html}Current Version:`</strong>`{=html} Check the
-`<a href="https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases">`{=html}releases
-page`</a>`{=html} for the latest version.
-```{=html}
-</p>
-```
-```{=html}
-<p>
-```
-Install the APK manually on your device.
-```{=html}
-</p>
-```
-:::
+<h2>✨ Core Features</h2>
 
-```{=html}
+<table align="center" width="100%">
+  <tr valign="top">
+    <td width="50%">
+      <h3>🧩 Dynamic Island Integration</h3>
+      <ul>
+        <li><b>System Compatibility:</b> Unlocks native-style interactive notification widgets on supported skins.</li>
+        <li><b>Seamless Triggers:</b> Responds instantly to play, pause, and track changes.</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h3>🎨 Expressive UI & Design</h3>
+      <ul>
+        <li><b>Dynamic Material You:</b> Beautiful adaptive colors that shift to match your playing album art[cite: 1].</li>
+        <li><b>Modern Architecture:</b> Sleek layouts engineered with Android's latest Material 3 guidelines[cite: 1].</li>
+      </ul>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td width="50%">
+      <h3>🎵 Advanced Streaming</h3>
+      <ul>
+        <li><b>Full Catalog Integration:</b> Stream any song from YouTube and YT Music, completely ad-free[cite: 1].</li>
+        <li><b>Background Playback:</b> High-quality continuous playback with full notification controls[cite: 1].</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h3>🛡️ 100% Privacy</h3>
+      <ul>
+        <li><b>Zero Data Collection:</b> No trackers, no telemetry, and no analytics[cite: 1].</li>
+        <li><b>Local Security:</b> All user libraries, preferences, and downloads remain private on your device[cite: 1].</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<br>
+
 <hr>
-```
-## 🛡️ Disclaimer
 
-```{=html}
-<p>
-```
-This project is `<strong>`{=html}not affiliated with or endorsed
-by`</strong>`{=html} the original VIVI Music developers, Apple, Spotify,
-or any device manufacturer.
-```{=html}
-</p>
-```
-```{=html}
-<p>
-```
-This software is provided `<strong>`{=html}as-is`</strong>`{=html},
-without any warranty.
-```{=html}
-</p>
-```
-```{=html}
+<div align="center">
+  <table border="0" cellpadding="15" cellspacing="0" width="85%">
+    <tr>
+      <td align="center">
+        <h3>📥 Download & Installation</h3>
+        <p>This mod requires manual installation via APK[cite: 2]. Check for regular updates on the releases page.</p>
+        <br>
+        <a href="https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases">
+          <img src="https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge&logo=github&logoColor=white" alt="Download Release">
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br>
+
 <hr>
-```
-## 📄 License & Source Code Notice
 
-```{=html}
-<p>
-```
-This project is based on the open-source VIVI Music project.
-```{=html}
-</p>
-```
-```{=html}
+<h2>🚗 Android Auto Setup</h2>
+
+<p>If VIVI Music doesn't appear in Android Auto[cite: 1]:</p>
+
+<ol>
+  <li>Open <strong>Android Auto</strong> on your phone[cite: 1]</li>
+  <li>Tap the <strong>hamburger menu</strong> (three lines) and go to <strong>Settings</strong>[cite: 1]</li>
+  <li>Scroll to the bottom and tap the <strong>version number</strong> multiple times to enable Developer Settings[cite: 1]</li>
+  <li>Tap the <strong>three dots menu</strong> (⋮) at the top-right[cite: 1]</li>
+  <li>Select <strong>Developer settings</strong>[cite: 1]</li>
+  <li>Enable <strong>Unknown sources</strong>[cite: 1]</li>
+  <li>Restart Android Auto and connect to your car[cite: 1]</li>
+</ol>
+
+<hr>
+
+<h2>🛡️ Privacy & Data Collection</h2>
+
+<p>At <strong>VIVI Music</strong>, your privacy is our top priority. We believe that your music and data belong exclusively to you[cite: 1].</p>
+
 <ul>
-```
-```{=html}
-<li>
-```
-Original copyright notices are retained.
-```{=html}
-</li>
-```
-```{=html}
-<li>
-```
-The license of the original project remains in effect.
-```{=html}
-</li>
-```
-```{=html}
-<li>
-```
-Full modified source code is provided in this repository.
-```{=html}
-</li>
-```
-```{=html}
+  <li><strong>Zero Data Collection:</strong> We do <strong>not</strong> collect, store, or share any of your personal information, usage habits, or listening history[cite: 1].</li>
+  <li><strong>100% Local:</strong> All your settings, downloaded tracks, and offline caches are stored securely on your device[cite: 1].</li>
+  <li><strong>No Tracking:</strong> There are no hidden trackers, analytics, or background services monitoring your activity[cite: 1].</li>
 </ul>
-```
-```{=html}
-<p>
-```
-If you use this mod, you must comply with the same license terms.
-```{=html}
-</p>
-```
-```{=html}
+
 <hr>
-```
-::: {align="center"}
-```{=html}
-<p>
-```
-`<strong>`{=html}Made with ❤️ for VIVI Music listeners`</strong>`{=html}
-```{=html}
-</p>
-```
-```{=html}
-<p>
-```
-⭐ Star this repository if you find the mod useful!
-```{=html}
-</p>
-```
-:::
+
+<h2>📜 Disclaimer</h2>
+
+<p>This project and its contents are <strong>not affiliated with, funded, authorized, endorsed by, or in any way associated with</strong> the original VIVI Music developers, YouTube, Google LLC, Apple, Spotify, or any device manufacturer[cite: 1, 2].</p>
+
+<p>Any trademark, service mark, trade name, or other intellectual property rights used in this project are owned by their respective owners[cite: 1].</p>
+
+<p>This software is provided <strong>as-is</strong>, without any warranty[cite: 2].</p>
+
+<hr>
+
+<h2>📄 License & Source Code Notice</h2>
+<p>This project is based on the open-source <a href="https://github.com/vivizzz007/vivi-music">VIVI Music</a> project[cite: 2]. Original copyright notices are retained, and the full modified source code is provided in this repository under the same license terms (GPL-3.0)[cite: 1, 2].</p>
+<p>If you copy, adapt, or reuse any part of the source code, you must adhere to the guidelines outlined in the <a href="rules.md">rules.md</a> file[cite: 1].</p>
+
+<hr>
+
+<div align="center">
+
+  <h2>🙏 Special Thanks & Credits</h2>
+
+  <p>VIVI Music and its modifications are built upon the foundation of amazing open-source projects and developers:</p>
+  <br>
+
+  <table border="0" cellpadding="10" cellspacing="0" width="90%">
+    <tr valign="top">
+      <td width="40%" align="left">
+        <b>💡 Special Thanks</b>
+        <ul>
+          <li><strong><a href="https://github.com/vivizzz007">vivizzz007</a></strong> – Creator of the original <a href="https://github.com/vivizzz007/vivi-music">VIVI Music</a> project.</li>
+          <li><strong><a href="https://github.com/mostafaalagamy">Mostafa Alagamy</a></strong> – Creator of <a href="https://github.com/mostafaalagamy/Metrolist">Metrolist</a>[cite: 1]. 🌟</li>
+          <li><strong><a href="https://github.com/ZemerTeam/zemer-cipher">@Zemer</a></strong> – For inventing the playback method[cite: 1]. 🎉</li>
+        </ul>
+      </td>
+      <td width="60%" align="left">
+        <b>🎖️ Foundational Projects</b>
+        <ul>
+          <li><strong><a href="https://github.com/binimum/am-lyrics">AM-Lyrics</a></strong> – Synced TTML lyrics[cite: 1].</li>
+          <li><strong><a href="https://github.com/better-lyrics/better-lyrics">Better Lyrics</a></strong> – Synced lyrics and YouTube Music integration[cite: 1].</li>
+          <li><strong><a href="https://github.com/better-lyrics/unison">Unison</a></strong> – Apple Music-style visualizer canvas[cite: 1].</li>
+          <li><strong><a href="https://github.com/ajayyy/SponsorBlock">SponsorBlock</a></strong> – Automatic segment skipping[cite: 1].</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+  <p align="center"><strong>Made with ❤️ for music lovers everywhere</strong></p>
+  <p align="center">⭐ Star the original repo and this mod if you enjoy VIVI Music!</p>
+</div>
