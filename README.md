@@ -84,7 +84,7 @@
 </table>
 
 <blockquote>
-  <p><strong>Help improve accuracy:</strong> If your device does not work even though its listed as supported, please report it in Issues.</p>
+  <p><strong>Help improve accuracy:</strong> If your device doesn't work even though its listed as supported, please report it in Issues.</p>
 </blockquote>
 
 <hr>
