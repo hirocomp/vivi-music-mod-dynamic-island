@@ -144,8 +144,7 @@ This unlocks UI behavior already present in the system interface.
   <table border="0" cellpadding="15" cellspacing="0" width="85%">
     <tr>
       <td align="center">
-        <h3>📥 Download & Installation</h3>
-        <p>🎉 New Feature: Automatic Updates!
+        <h3>🎉 New Feature: Automatic Updates! 🎉</h3>
 
 Good news! The VIVI Music Dynamic Island Mod now supports automatic updates.
 
