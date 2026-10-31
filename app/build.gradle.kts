@@ -22,9 +22,9 @@ android {
     ndkVersion = "27.0.12077973"
 
     defaultConfig {
-        applicationId = "com.tencent.qqmusic"
+        applicationId = "com.luna.music"
         // Match this build to release tags such as v6.0.9_V1.
-        val updateVariant = "V2"
+        val updateVariant = "V3"
         buildConfigField("String", "UPDATE_VARIANT", "\"$updateVariant\"")
         minSdk = 26
         targetSdk = 37
