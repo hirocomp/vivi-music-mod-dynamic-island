@@ -78,7 +78,7 @@
   </tr>
   <tr>
     <td align="center">Realme</td>
-    <td align="center">No ❌</td>
+    <td align="center">Limited ⚠️</td>
     <td align="center">Yes ✅</td>
   </tr>
 </table>
