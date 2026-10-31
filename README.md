@@ -148,7 +148,7 @@ This unlocks UI behavior already present in the system interface.
 
 Good news! The VIVI Music Dynamic Island Mod now supports automatic updates.
 
-Enjoy a more convenient update experience! 🚀.</p>
+Enjoy a more convenient update experience! 🚀</p>
         <br>
         <a href="https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases">
           <img src="https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge&logo=github&logoColor=white" alt="Download Release">
