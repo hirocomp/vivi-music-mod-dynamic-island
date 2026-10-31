@@ -22,9 +22,9 @@ android {
     ndkVersion = "27.0.12077973"
 
     defaultConfig {
-        applicationId = "com.spotify.music"
+        applicationId = "com.tencent.qqmusic"
         // Match this build to release tags such as v6.0.9_V1.
-        val updateVariant = "V1"
+        val updateVariant = "V2"
         buildConfigField("String", "UPDATE_VARIANT", "\"$updateVariant\"")
         minSdk = 26
         targetSdk = 37
