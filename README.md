@@ -1,10 +1,10 @@
 <div align="center">
   <a href="https://vivimusic.mkmdevilmi.workers.dev/">
-    <img src="https://github.com/vivizzz007/vivi-music/blob/main/fastlane/metadata/android/en-US/images/icon.png?raw=true" width="160" height="160" style="display: block; margin: 0 auto"/>
+    <img src="assets/bannerofficial.png" alt="VIVI Music Banner" style="display: block; margin: 0 auto; max-width: 100%"/>
   </a>
   <br>
-  <h1>VIVI Music — Dynamic Island Mod</h1>
-  <h3>Enable Dynamic Island features on supported Android devices</h3>
+  <h1>VIVI Music</h1>
+  <h3>More Than Just Music — Your Ultimate Audio Experience</h3>
 
   <p>
     <a href="https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases">
@@ -25,8 +25,8 @@
 <table align="center" width="100%">
   <tr valign="middle">
     <td width="60%" align="left">
-      <p>✨ This is a modified version of the <b>VIVI Music</b> application engineered to bring <b>Dynamic Island support</b> to selected Android devices[cite: 2]. Powered by a responsive design engine, it makes your system treat VIVI Music as a native compatible app[cite: 2] without requiring root access[cite: 2].</p>
-      <p>Enjoy all the core features of VIVI Music—such as ad-free streaming, Material You dynamic theming, synced lyrics, and local caching—while unlocking system-level Dynamic Island popups on supported Chinese and Global ROMs[cite: 2].</p>
+      <p>✨ This is a modified version of the <b>VIVI Music</b> application engineered to bring <b>Dynamic Island support</b> to selected Android devices. Powered by a responsive design engine, it makes your system treat VIVI Music as a native compatible app without requiring root access.</p>
+      <p>Enjoy all the core features of VIVI Music—such as ad-free streaming, Material You dynamic theming, synced lyrics, and local caching—while unlocking system-level Dynamic Island popups on supported Chinese and Global ROMs.</p>
       <blockquote>
         <b>🎵 Your music, your aesthetic, now with Dynamic Island integration.</b>
       </blockquote>
@@ -53,38 +53,38 @@
   </tr>
   <tr>
     <td align="center">Xiaomi</td>
-    <td align="center">Yes ✅[cite: 2]</td>
-    <td align="center">Yes ✅[cite: 2]</td>
+    <td align="center">Yes ✅</td>
+    <td align="center">Yes ✅</td>
   </tr>
   <tr>
     <td align="center">Honor</td>
-    <td align="center">Yes ✅[cite: 2]</td>
-    <td align="center">Yes ✅[cite: 2]</td>
+    <td align="center">Yes ✅</td>
+    <td align="center">Yes ✅</td>
   </tr>
   <tr>
     <td align="center">Vivo / IQOO</td>
-    <td align="center">Limited ⚠️[cite: 2]</td>
-    <td align="center">Yes ✅[cite: 2]</td>
+    <td align="center">Limited ⚠️</td>
+    <td align="center">Yes ✅</td>
   </tr>
   <tr>
     <td align="center">Oppo</td>
-    <td align="center">Limited ⚠️[cite: 2]</td>
-    <td align="center">Yes ✅[cite: 2]</td>
+    <td align="center">Limited ⚠️</td>
+    <td align="center">Yes ✅</td>
   </tr>
   <tr>
     <td align="center">OnePlus</td>
-    <td align="center">Limited ⚠️[cite: 2]</td>
-    <td align="center">Yes ✅[cite: 2]</td>
+    <td align="center">Limited ⚠️</td>
+    <td align="center">Yes ✅</td>
   </tr>
   <tr>
     <td align="center">Realme</td>
-    <td align="center">No ❌[cite: 2]</td>
-    <td align="center">Yes ✅[cite: 2]</td>
+    <td align="center">No ❌</td>
+    <td align="center">Yes ✅</td>
   </tr>
 </table>
 
 <blockquote>
-  <p><strong>Help improve accuracy:</strong> If your device works even though listed as unsupported, or does not work while listed as supported, please report it in Issues[cite: 2].</p>
+  <p><strong>Help improve accuracy:</strong> If your device works even though listed as unsupported, or does not work while listed as supported, please report it in Issues.</p>
 </blockquote>
 
 <hr>
@@ -93,8 +93,8 @@
 
 <p>
 No features are simulated or emulated. Instead, the phone is allowed to
-<strong>recognize VIVI Music as an app that supports Dynamic Island</strong>[cite: 2].
-This unlocks UI behavior already present in the system interface[cite: 2].
+<strong>recognize VIVI Music as an app that supports Dynamic Island</strong>.
+This unlocks UI behavior already present in the system interface.
 </p>
 
 <hr>
@@ -113,8 +113,8 @@ This unlocks UI behavior already present in the system interface[cite: 2].
     <td width="50%">
       <h3>🎨 Expressive UI & Design</h3>
       <ul>
-        <li><b>Dynamic Material You:</b> Beautiful adaptive colors that shift to match your playing album art[cite: 1].</li>
-        <li><b>Modern Architecture:</b> Sleek layouts engineered with Android's latest Material 3 guidelines[cite: 1].</li>
+        <li><b>Dynamic Material You:</b> Beautiful adaptive colors that shift to match your playing album art.</li>
+        <li><b>Modern Architecture:</b> Sleek layouts engineered with Android's latest Material 3 guidelines.</li>
       </ul>
     </td>
   </tr>
@@ -122,15 +122,15 @@ This unlocks UI behavior already present in the system interface[cite: 2].
     <td width="50%">
       <h3>🎵 Advanced Streaming</h3>
       <ul>
-        <li><b>Full Catalog Integration:</b> Stream any song from YouTube and YT Music, completely ad-free[cite: 1].</li>
-        <li><b>Background Playback:</b> High-quality continuous playback with full notification controls[cite: 1].</li>
+        <li><b>Full Catalog Integration:</b> Stream any song from YouTube and YT Music, completely ad-free.</li>
+        <li><b>Background Playback:</b> High-quality continuous playback with full notification controls.</li>
       </ul>
     </td>
     <td width="50%">
       <h3>🛡️ 100% Privacy</h3>
       <ul>
-        <li><b>Zero Data Collection:</b> No trackers, no telemetry, and no analytics[cite: 1].</li>
-        <li><b>Local Security:</b> All user libraries, preferences, and downloads remain private on your device[cite: 1].</li>
+        <li><b>Zero Data Collection:</b> No trackers, no telemetry, and no analytics.</li>
+        <li><b>Local Security:</b> All user libraries, preferences, and downloads remain private on your device.</li>
       </ul>
     </td>
   </tr>
@@ -145,7 +145,7 @@ This unlocks UI behavior already present in the system interface[cite: 2].
     <tr>
       <td align="center">
         <h3>📥 Download & Installation</h3>
-        <p>This mod requires manual installation via APK[cite: 2]. Check for regular updates on the releases page.</p>
+        <p>This mod requires manual installation via APK. Check for regular updates on the releases page.</p>
         <br>
         <a href="https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases">
           <img src="https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge&logo=github&logoColor=white" alt="Download Release">
@@ -161,45 +161,45 @@ This unlocks UI behavior already present in the system interface[cite: 2].
 
 <h2>🚗 Android Auto Setup</h2>
 
-<p>If VIVI Music doesn't appear in Android Auto[cite: 1]:</p>
+<p>If VIVI Music doesn't appear in Android Auto:</p>
 
 <ol>
-  <li>Open <strong>Android Auto</strong> on your phone[cite: 1]</li>
-  <li>Tap the <strong>hamburger menu</strong> (three lines) and go to <strong>Settings</strong>[cite: 1]</li>
-  <li>Scroll to the bottom and tap the <strong>version number</strong> multiple times to enable Developer Settings[cite: 1]</li>
-  <li>Tap the <strong>three dots menu</strong> (⋮) at the top-right[cite: 1]</li>
-  <li>Select <strong>Developer settings</strong>[cite: 1]</li>
-  <li>Enable <strong>Unknown sources</strong>[cite: 1]</li>
-  <li>Restart Android Auto and connect to your car[cite: 1]</li>
+  <li>Open <strong>Android Auto</strong> on your phone</li>
+  <li>Tap the <strong>hamburger menu</strong> (three lines) and go to <strong>Settings</strong></li>
+  <li>Scroll to the bottom and tap the <strong>version number</strong> multiple times to enable Developer Settings</li>
+  <li>Tap the <strong>three dots menu</strong> (⋮) at the top-right</li>
+  <li>Select <strong>Developer settings</strong></li>
+  <li>Enable <strong>Unknown sources</strong></li>
+  <li>Restart Android Auto and connect to your car</li>
 </ol>
 
 <hr>
 
 <h2>🛡️ Privacy & Data Collection</h2>
 
-<p>At <strong>VIVI Music</strong>, your privacy is our top priority. We believe that your music and data belong exclusively to you[cite: 1].</p>
+<p>At <strong>VIVI Music</strong>, your privacy is our top priority. We believe that your music and data belong exclusively to you.</p>
 
 <ul>
-  <li><strong>Zero Data Collection:</strong> We do <strong>not</strong> collect, store, or share any of your personal information, usage habits, or listening history[cite: 1].</li>
-  <li><strong>100% Local:</strong> All your settings, downloaded tracks, and offline caches are stored securely on your device[cite: 1].</li>
-  <li><strong>No Tracking:</strong> There are no hidden trackers, analytics, or background services monitoring your activity[cite: 1].</li>
+  <li><strong>Zero Data Collection:</strong> We do <strong>not</strong> collect, store, or share any of your personal information, usage habits, or listening history.</li>
+  <li><strong>100% Local:</strong> All your settings, downloaded tracks, and offline caches are stored securely on your device.</li>
+  <li><strong>No Tracking:</strong> There are no hidden trackers, analytics, or background services monitoring your activity.</li>
 </ul>
 
 <hr>
 
 <h2>📜 Disclaimer</h2>
 
-<p>This project and its contents are <strong>not affiliated with, funded, authorized, endorsed by, or in any way associated with</strong> the original VIVI Music developers, YouTube, Google LLC, Apple, Spotify, or any device manufacturer[cite: 1, 2].</p>
+<p>This project and its contents are <strong>not affiliated with, funded, authorized, endorsed by, or in any way associated with</strong> the original VIVI Music developers, YouTube, Google LLC, Apple, Spotify, or any device manufacturer.</p>
 
-<p>Any trademark, service mark, trade name, or other intellectual property rights used in this project are owned by their respective owners[cite: 1].</p>
+<p>Any trademark, service mark, trade name, or other intellectual property rights used in this project are owned by their respective owners.</p>
 
-<p>This software is provided <strong>as-is</strong>, without any warranty[cite: 2].</p>
+<p>This software is provided <strong>as-is</strong>, without any warranty.</p>
 
 <hr>
 
 <h2>📄 License & Source Code Notice</h2>
-<p>This project is based on the open-source <a href="https://github.com/vivizzz007/vivi-music">VIVI Music</a> project[cite: 2]. Original copyright notices are retained, and the full modified source code is provided in this repository under the same license terms (GPL-3.0)[cite: 1, 2].</p>
-<p>If you copy, adapt, or reuse any part of the source code, you must adhere to the guidelines outlined in the <a href="rules.md">rules.md</a> file[cite: 1].</p>
+<p>This project is based on the open-source <a href="https://github.com/vivizzz007/vivi-music">VIVI Music</a> project. Original copyright notices are retained, and the full modified source code is provided in this repository under the same license terms (GPL-3.0).</p>
+<p>If you copy, adapt, or reuse any part of the source code, you must adhere to the guidelines outlined in the <a href="rules.md">rules.md</a> file.</p>
 
 <hr>
 
@@ -216,17 +216,17 @@ This unlocks UI behavior already present in the system interface[cite: 2].
         <b>💡 Special Thanks</b>
         <ul>
           <li><strong><a href="https://github.com/vivizzz007">vivizzz007</a></strong> – Creator of the original <a href="https://github.com/vivizzz007/vivi-music">VIVI Music</a> project.</li>
-          <li><strong><a href="https://github.com/mostafaalagamy">Mostafa Alagamy</a></strong> – Creator of <a href="https://github.com/mostafaalagamy/Metrolist">Metrolist</a>[cite: 1]. 🌟</li>
-          <li><strong><a href="https://github.com/ZemerTeam/zemer-cipher">@Zemer</a></strong> – For inventing the playback method[cite: 1]. 🎉</li>
+          <li><strong><a href="https://github.com/mostafaalagamy">Mostafa Alagamy</a></strong> – Creator of <a href="https://github.com/mostafaalagamy/Metrolist">Metrolist</a>. 🌟</li>
+          <li><strong><a href="https://github.com/ZemerTeam/zemer-cipher">@Zemer</a></strong> – For inventing the playback method. 🎉</li>
         </ul>
       </td>
       <td width="60%" align="left">
         <b>🎖️ Foundational Projects</b>
         <ul>
-          <li><strong><a href="https://github.com/binimum/am-lyrics">AM-Lyrics</a></strong> – Synced TTML lyrics[cite: 1].</li>
-          <li><strong><a href="https://github.com/better-lyrics/better-lyrics">Better Lyrics</a></strong> – Synced lyrics and YouTube Music integration[cite: 1].</li>
-          <li><strong><a href="https://github.com/better-lyrics/unison">Unison</a></strong> – Apple Music-style visualizer canvas[cite: 1].</li>
-          <li><strong><a href="https://github.com/ajayyy/SponsorBlock">SponsorBlock</a></strong> – Automatic segment skipping[cite: 1].</li>
+          <li><strong><a href="https://github.com/binimum/am-lyrics">AM-Lyrics</a></strong> – Synced TTML lyrics.</li>
+          <li><strong><a href="https://github.com/better-lyrics/better-lyrics">Better Lyrics</a></strong> – Synced lyrics and YouTube Music integration.</li>
+          <li><strong><a href="https://github.com/better-lyrics/unison">Unison</a></strong> – Apple Music-style visualizer canvas.</li>
+          <li><strong><a href="https://github.com/ajayyy/SponsorBlock">SponsorBlock</a></strong> – Automatic segment skipping.</li>
         </ul>
       </td>
     </tr>
