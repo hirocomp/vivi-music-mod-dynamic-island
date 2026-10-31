@@ -8,7 +8,6 @@
 
   <p>
     <a href="https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases">
-      <img src="https://img.shields.io/github/v/release/hirocomp/vivi-music-mod-dynamic-island?label=Download&style=for-the-badge&color=4CAF50" alt="Download Latest">
     </a>
     <img src="https://img.shields.io/badge/Status-Modified%20Build-blue?style=for-the-badge" alt="Modified Build">
     <img src="https://img.shields.io/badge/Updates-Manual-orange?style=for-the-badge" alt="Manual Updates">
