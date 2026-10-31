@@ -1,4 +1,4 @@
-    <div align="center">
+<div align="center">
   <a href="https://vivimusic.mkmdevilmi.workers.dev/">
     <img src="https://github.com/vivizzz007/vivi-music/blob/main/fastlane/metadata/android/en-US/images/icon.png?
   </a>
