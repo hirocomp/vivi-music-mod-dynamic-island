@@ -234,5 +234,5 @@ This unlocks UI behavior already present in the system interface.
 
   <br>
   <p align="center"><strong>Made with ❤️ for music lovers everywhere</strong></p>
-  <p align="center">⭐ Star the original repo and this mod if you enjoy VIVI Music!</p>
+  <p align="center">⭐ Star this mod and the original repo if you enjoy VIVI Music!</p>
 </div>
