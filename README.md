@@ -1,6 +1,6 @@
-<div align="center">
+    <div align="center">
   <a href="https://vivimusic.mkmdevilmi.workers.dev/">
-    <img src="assets/bannerofficial.png" alt="VIVI Music Banner" style="display: block; margin: 0 auto; max-width: 100%"/>
+    <img src="https://github.com/vivizzz007/vivi-music/blob/main/fastlane/metadata/android/en-US/images/icon.png?
   </a>
   <br>
   <h1>VIVI Music</h1>
