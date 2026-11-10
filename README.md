@@ -11,10 +11,10 @@
   <p>
     <a href="https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases">
     </a>
-    <img src="https://img.shields.io/badge/Status-Modified%20Build-blue?style=for-the-badge" alt="Modified Build">
-    <a href="LICENSE">
-      <img src="https://img.shields.io/github/license/vivizzz007/vivi-music?style=for-the-badge" alt="License">
-    </a>
+    <img src="https://shields.io" alt="Modified Build"> 
+<a href="LICENSE"> 
+  <img src="https://shields.io" alt="License"> 
+</a>
   </p>
 </div>
 
