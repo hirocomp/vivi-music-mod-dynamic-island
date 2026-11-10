@@ -140,10 +140,6 @@ This unlocks UI behavior already present in the system interface.
 
 <br>
 
-<hr>
-
-
-<hr>
 
 <h2>🚗 Android Auto Setup</h2>
 
