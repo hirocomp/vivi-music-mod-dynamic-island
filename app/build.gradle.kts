@@ -22,13 +22,13 @@ android {
     ndkVersion = "27.0.12077973"
 
     defaultConfig {
-        applicationId = "com.tencent.qqmusic"
+        applicationId = "com.luna.music"
         minSdk = 26
         targetSdk = 37
         versionCode = 79
         val betaVersionName = project.findProperty("betaVersionName") as String?
         versionName = betaVersionName ?: "7.0.0"
-        val updateVariant = "V2"
+        val updateVariant = "V3"
         buildConfigField("String", "UPDATE_VARIANT", "\"$updateVariant\"")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
