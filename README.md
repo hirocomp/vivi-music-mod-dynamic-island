@@ -13,8 +13,9 @@
     </a>
     <img src="https://shields.io" alt="Modified Build"> 
 <a href="LICENSE"> 
-  <img src="https://shields.io" alt="License"> 
+  <img src="https://fury.io" alt="License"> 
 </a>
+
   </p>
 </div>
 
