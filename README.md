@@ -122,12 +122,12 @@
 
 ---
 
-### 🟢 V1 — ORIGINAL
-**📦 Original Package Identity**
+### 🟢 V1 — Spotify
+**📦 Spotify Package Identity**
 
-- 🎵 Uses the original package identity.
+- 🎵 Uses the Spotify package identity.
 - 🏝️ Enables Dynamic Island-style music features on compatible devices.
-- ✨ Provides the standard Vivi Music mod experience.
+- ✨ Provides the standard Vivi Music Mod experience.
 
 ### 🔵 V2 — QQ MUSIC
 **📦 QQ Music Package Identity**
