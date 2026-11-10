@@ -117,11 +117,62 @@
 
 <h2>🛠️ How It Works</h2>
 
-<p>
-No features are simulated or emulated. Instead, the phone is allowed to
-<strong>recognize VIVI Music as an app that supports Dynamic Island</strong>.
-This unlocks UI behavior already present in the system interface.
-</p>
+
+## 🎧・MOD VARIANTS GUIDE
+
+> ✨ **One mod, multiple variants!**
+>
+> Each variant uses a different package identity to provide compatibility with different devices and system features. Choose the one that best fits your device!
+
+---
+
+### 🟢 V1 — ORIGINAL
+**📦 Original Package Identity**
+
+- 🔹 Uses the original package identity.
+- 🔹 Provides the standard Vivi Music mod experience.
+- 🔹 A good starting point if you're unsure which variant to choose.
+
+### 🔵 V2 — QQ MUSIC
+**📦 QQ Music Package Identity**
+
+- 🔹 Uses the QQ Music package identity.
+- 🔹 Replaces the previous Apple Music-based variant.
+- 🔹 Introduced to improve compatibility with certain devices.
+
+### 🟣 V3 — LUNA MUSIC
+**📦 Luna Music Player Package Identity**
+
+- 🔹 Makes your device recognize Vivi Music as Luna Music Player.
+- 🔹 Designed for devices supporting Luna Music's Dynamic Island-style features.
+- 🔹 Enables compatible music pop-ups and capsule controls.
+
+💡 **How does it work?**
+
+If your device supports Dynamic Island-style features for Luna Music Player, V3 allows Vivi Music to take advantage of those features by using Luna's package identity.
+
+---
+
+### ⚠️・IMPORTANT UPDATE
+
+> 🔄 **V2 has been changed!**
+>
+> Due to compatibility reasons, V2 now uses **QQ Music** instead of **Apple Music**.
+>
+> ✅ V1 — No changes  
+> 🔄 V2 — Apple Music → QQ Music  
+> ✅ V3 — No changes
+
+---
+
+### 💡・WHICH ONE SHOULD I CHOOSE?
+
+- 🟢 **V1:** Want the original package identity? Start here.
+- 🔵 **V2:** Want to try the QQ Music-based variant? Choose this.
+- 🟣 **V3:** Want Dynamic Island-style integration through Luna Music Player? Choose this if your device supports it.
+
+> 🚀 **Not sure?** Try the variant that best matches your device. If one doesn't work as expected, you can try another!
+
 
 <hr>
 
