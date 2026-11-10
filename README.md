@@ -51,6 +51,9 @@
 
 <hr>
 
+
+<hr>
+
 <h2>📱 Compatibility Matrix & Supported OS</h2>
 
 <table align="center" width="100%">
@@ -59,55 +62,61 @@
     <th align="center">Global ROM</th>
     <th align="center">China ROM</th>
     <th align="center">Operating Systems</th>
-    <th align="center">OS Logo</th>
   </tr>
   <tr>
     <td align="center">Xiaomi</td>
     <td align="center">Yes ✅</td>
     <td align="center">Yes ✅</td>
-    <td align="center"><img src="https://shields.io" alt="HyperOS"></td>
-    <td align="center"><img src="https://shields.io" alt="Xiaomi Logo"></td>
+    <td align="center">
+      <img src="https://cdn.simpleicons.org/xiaomi/FF6900" alt="HyperOS" height="32">
+    </td>
   </tr>
   <tr>
     <td align="center">Honor</td>
     <td align="center">Yes ✅</td>
     <td align="center">Yes ✅</td>
-    <td align="center"><img src="https://shields.io" alt="MagicOS"></td>
-    <td align="center"><img src="https://shields.io" alt="Android Logo"></td>
+    <td align="center">
+      <img src="https://cdn.simpleicons.org/honor/000000" alt="MagicOS" height="32">
+    </td>
   </tr>
   <tr>
     <td align="center">Vivo / IQOO</td>
     <td align="center">Limited ⚠️</td>
     <td align="center">Yes ✅</td>
-    <td align="center"><img src="https://shields.io" alt="OriginOS"></td>
-    <td align="center"><img src="https://shields.io" alt="Vivo Logo"></td>
+    <td align="center">
+      <img src="https://cdn.simpleicons.org/vivo/415FFF" alt="OriginOS" height="32">
+    </td>
   </tr>
   <tr>
     <td align="center">Oppo</td>
     <td align="center">Limited ⚠️</td>
     <td align="center">Yes ✅</td>
-    <td align="center"><img src="https://shields.io" alt="ColorOS"></td>
-    <td align="center"><img src="https://shields.io" alt="Oppo Logo"></td>
+    <td align="center">
+      <img src="https://cdn.simpleicons.org/oppo/00A862" alt="ColorOS" height="32">
+    </td>
   </tr>
   <tr>
     <td align="center">OnePlus</td>
     <td align="center">Limited ⚠️</td>
     <td align="center">Yes ✅</td>
-    <td align="center"><img src="https://shields.io" alt="OxygenOS"></td>
-    <td align="center"><img src="https://shields.io" alt="OnePlus Logo"></td>
+    <td align="center">
+      <img src="https://cdn.simpleicons.org/oneplus/F5010C" alt="OxygenOS" height="32">
+    </td>
   </tr>
   <tr>
     <td align="center">Realme</td>
     <td align="center">Limited ⚠️</td>
     <td align="center">Yes ✅</td>
-    <td align="center"><img src="https://shields.io" alt="realme UI"></td>
-    <td align="center"><img src="https://shields.io" alt="Realme Logo"></td>
+    <td align="center">
+      <img src="https://cdn.simpleicons.org/realme/FFC915" alt="realme UI" height="32">
+    </td>
   </tr>
 </table>
 
 <blockquote>
   <p><strong>Help improve accuracy:</strong> If your device doesn't work even though it's listed as supported, please report it in Issues.</p>
 </blockquote>
+
 
 
 <hr>
