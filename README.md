@@ -20,7 +20,7 @@
   </p>
 </div>
 
-<hr>
+
 
 <h2>🎵 About the Mod</h2>
 
