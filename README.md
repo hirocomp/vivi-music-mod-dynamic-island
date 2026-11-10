@@ -5,7 +5,7 @@
   <br>
   </a>
   <br>
-  <h1>VIVI Music</h1>
+  <h1 style="border: none; text-decoration: none;">VIVI Music</h1>
   <h3>More Than Just Music — Your Ultimate Audio Experience</h3>
 
   <p>
@@ -20,7 +20,7 @@
   </p>
 </div>
 
-
+<hr>
 
 <h2>🎵 About the Mod</h2>
 
