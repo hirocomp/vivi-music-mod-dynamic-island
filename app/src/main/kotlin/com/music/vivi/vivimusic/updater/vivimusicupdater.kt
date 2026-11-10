@@ -822,13 +822,12 @@ suspend fun checkForUpdate(
 
             var bestStableRelease: JSONObject? = null
             var bestOverallRelease: JSONObject? = null
-            val updateVariant = BuildConfig.UPDATE_VARIANT
 
+            val updateVariant = BuildConfig.UPDATE_VARIANT
             for (i in 0 until releases.length()) {
                 val release = releases.getJSONObject(i)
                 val tagName = release.getString("tag_name")
                 if (!tagName.endsWith("_$updateVariant")) continue
-
                 val isBeta = tagName.startsWith("b")
                 
                 // Track best stable
@@ -851,32 +850,7 @@ suspend fun checkForUpdate(
                 val targetTagName = targetRelease.getString("tag_name")
                 val isNewer = isNewerVersion(targetTagName, currentVersion)
                 
-                // Track Switch Logic:
-                // If the user has disabled beta updates, we should offer the latest stable release
-                // even if it's technically a lower version number than their current beta/custom build.
-                // This allows users to correctly "roll back" to the stable track.
-                val currentIsBeta = currentVersion.startsWith("b")
-                val targetIsStable = targetTagName.startsWith("v")
-                
-                // Compare version numbers ignoring prefixes
-                val currentClean = withoutUpdateVariant(currentVersion).removePrefix("b").removePrefix("v")
-                val targetClean = withoutUpdateVariant(targetTagName).removePrefix("b").removePrefix("v")
-                val isDifferentVersion = currentClean != targetClean
-                
-                var shouldShow = isNewer
-                if (!shouldShow && !betaEnabled) {
-                    // Logic: If I'm on a Beta (b5.0.7) and latest stable is v5.0.6, 
-                    // and I just turned OFF beta, I want to see v5.0.6.
-                    if (currentIsBeta && targetIsStable) {
-                        shouldShow = true
-                    } else if (isDifferentVersion && targetIsStable) {
-                        // Also show if current is a newer unofficial stable (e.g. built locally as 5.0.7)
-                        // but user wants the official stable 5.0.6.
-                        shouldShow = true
-                    }
-                }
-
-                if (shouldShow) {
+                if (isNewer) {
                     val tagWithPrefix = targetRelease.getString("tag_name")
                     val displayTag = tagWithPrefix
 

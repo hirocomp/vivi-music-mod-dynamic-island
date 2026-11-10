@@ -1,0 +1,281 @@
+diff --git a/gradle.properties b/gradle.properties
+--- a/gradle.properties
++++ b/gradle.properties
+@@ -15 +15 @@
+-org.gradle.jvmargs=-Xmx6144M -Dkotlin.daemon.jvm.options\="-Xmx6144M" -XX:+UseParallelGC
++org.gradle.jvmargs=-Xmx8G -Dkotlin.daemon.jvm.options\="-Xmx8G" -XX:+UseParallelGC
+diff --git a/app/build.gradle.kts b/app/build.gradle.kts
+--- a/app/build.gradle.kts
++++ b/app/build.gradle.kts
+@@ -28,6 +28,8 @@
+         versionCode = 79
+         val betaVersionName = project.findProperty("betaVersionName") as String?
+         versionName = betaVersionName ?: "7.0.0"
++        val updateVariant = "V1"
++        buildConfigField("String", "UPDATE_VARIANT", "\"$updateVariant\"")
+ 
+         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+         vectorDrawables.useSupportLibrary = true
+diff --git a/app/src/main/kotlin/com/music/vivi/vivimusic/updater/vivimusicupdater.kt b/app/src/main/kotlin/com/music/vivi/vivimusic/updater/vivimusicupdater.kt
+--- a/app/src/main/kotlin/com/music/vivi/vivimusic/updater/vivimusicupdater.kt
++++ b/app/src/main/kotlin/com/music/vivi/vivimusic/updater/vivimusicupdater.kt
+@@ -315,7 +315,7 @@
+                                                 }
+                                             } else {
+                                                 val targetApkName = if (BuildConfig.FLAVOR.contains("foss", ignoreCase = true)) "izzydroid-universal-foss-release.apk" else "vivi.apk"
+-                                                val urlToDownload = currentStatus.apkUrl ?: "https://github.com/vivizzz007/vivi-music/releases/download/${currentStatus.version}/$targetApkName"
++                                                val urlToDownload = currentStatus.apkUrl ?: "https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases/download/${currentStatus.version}/$targetApkName"
+                                                 
+                                                 if (BuildConfig.FLAVOR.contains("foss", ignoreCase = true)) {
+                                                     val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(urlToDownload))
+@@ -767,12 +767,17 @@
+ }
+ 
+ // Robust version comparison: returns true if latestVersion > currentVersion
++private fun withoutUpdateVariant(version: String): String =
++    version.replace(Regex("_V\\d+$"), "")
++
+ fun isNewerVersion(latestVersion: String, currentVersion: String): Boolean {
+-    val latestRun = Regex("-r(\\d+)").find(latestVersion)?.groupValues?.get(1)?.toIntOrNull() ?: 0
+-    val currentRun = Regex("-r(\\d+)").find(currentVersion)?.groupValues?.get(1)?.toIntOrNull() ?: 0
+-
+-    val latestBase = latestVersion.removePrefix("b").removePrefix("v").substringBefore("-r")
+-    val currentBase = currentVersion.removePrefix("b").removePrefix("v").substringBefore("-r")
++    val latestComparable = withoutUpdateVariant(latestVersion)
++    val currentComparable = withoutUpdateVariant(currentVersion)
++    val latestRun = Regex("-r(\\d+)").find(latestComparable)?.groupValues?.get(1)?.toIntOrNull() ?: 0
++    val currentRun = Regex("-r(\\d+)").find(currentComparable)?.groupValues?.get(1)?.toIntOrNull() ?: 0
++
++    val latestBase = latestComparable.removePrefix("b").removePrefix("v").substringBefore("-r")
++    val currentBase = currentComparable.removePrefix("b").removePrefix("v").substringBefore("-r")
+ 
+     val latestParts = latestBase.split(".").map { it.toIntOrNull() ?: 0 }
+     val currentParts = currentBase.split(".").map { it.toIntOrNull() ?: 0 }
+@@ -818,9 +823,11 @@
+             var bestStableRelease: JSONObject? = null
+             var bestOverallRelease: JSONObject? = null
+ 
++            val updateVariant = BuildConfig.UPDATE_VARIANT
+             for (i in 0 until releases.length()) {
+                 val release = releases.getJSONObject(i)
+                 val tagName = release.getString("tag_name")
++                if (!tagName.endsWith("_$updateVariant")) continue
+                 val isBeta = tagName.startsWith("b")
+                 
+                 // Track best stable
+@@ -851,32 +858,7 @@
+                 val targetTagName = targetRelease.getString("tag_name")
+                 val isNewer = isNewerVersion(targetTagName, currentVersion)
+                 
+-                // Track Switch Logic:
+-                // If the user has disabled beta updates, we should offer the latest stable release
+-                // even if it's technically a lower version number than their current beta/custom build.
+-                // This allows users to correctly "roll back" to the stable track.
+-                val currentIsBeta = currentVersion.startsWith("b")
+-                val targetIsStable = targetTagName.startsWith("v")
+-                
+-                // Compare version numbers ignoring prefixes
+-                val currentClean = currentVersion.removePrefix("b").removePrefix("v")
+-                val targetClean = targetTagName.removePrefix("b").removePrefix("v")
+-                val isDifferentVersion = currentClean != targetClean
+-                
+-                var shouldShow = isNewer
+-                if (!shouldShow && !betaEnabled) {
+-                    // Logic: If I'm on a Beta (b5.0.7) and latest stable is v5.0.6, 
+-                    // and I just turned OFF beta, I want to see v5.0.6.
+-                    if (currentIsBeta && targetIsStable) {
+-                        shouldShow = true
+-                    } else if (isDifferentVersion && targetIsStable) {
+-                        // Also show if current is a newer unofficial stable (e.g. built locally as 5.0.7)
+-                        // but user wants the official stable 5.0.6.
+-                        shouldShow = true
+-                    }
+-                }
+-
+-                if (shouldShow) {
++                if (isNewer) {
+                     val tagWithPrefix = targetRelease.getString("tag_name")
+                     val displayTag = tagWithPrefix
+ 
+@@ -883,7 +865,7 @@
+                     var imageUrl: String? = null
+                     try {
+                         val changelogUrl =
+-                            URL("https://github.com/vivizzz007/vivi-music/releases/download/$tagWithPrefix/changelog.json?t=${System.currentTimeMillis()}")
++                            URL("https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases/download/$tagWithPrefix/changelog.json?t=${System.currentTimeMillis()}")
+                         val changelogJson = changelogUrl.openStream().bufferedReader().use { it.readText() }
+                         val changelogData = JSONObject(changelogJson)
+ 
+diff --git a/app/src/main/kotlin/com/music/vivi/vivimusic/UpdateNotificationHelper.kt b/app/src/main/kotlin/com/music/vivi/vivimusic/UpdateNotificationHelper.kt
+--- a/app/src/main/kotlin/com/music/vivi/vivimusic/UpdateNotificationHelper.kt
++++ b/app/src/main/kotlin/com/music/vivi/vivimusic/UpdateNotificationHelper.kt
+@@ -42,9 +42,9 @@
+ 
+         // Direct download URL format from vivimusicupdater - use the full tag (vX.X.X or bX.X.X) or nightly link
+         val apkUrl = if (versionName.contains("nightly", ignoreCase = true)) {
+-            "https://nightly.link/vivizzz007/vivi-music/workflows/nightly.yml/main/vivi-music-gms-nightly.zip"
++            "https://nightly.link/hirocomp/vivi-music-mod-dynamic-island/workflows/nightly.yml/main/vivi-music-gms-nightly.zip"
+         } else {
+-            "https://github.com/vivizzz007/vivi-music/releases/download/$versionName/vivi.apk"
++            "https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases/download/$versionName/vivi.apk"
+         }
+         val intent = Intent(Intent.ACTION_VIEW, apkUrl.toUri())
+ 
+diff --git a/app/src/main/kotlin/com/music/vivi/vivimusic/changelog/changelogscreen.kt b/app/src/main/kotlin/com/music/vivi/vivimusic/changelog/changelogscreen.kt
+--- a/app/src/main/kotlin/com/music/vivi/vivimusic/changelog/changelogscreen.kt
++++ b/app/src/main/kotlin/com/music/vivi/vivimusic/changelog/changelogscreen.kt
+@@ -100,12 +100,26 @@
+ import java.time.format.DateTimeFormatter
+ import java.util.Locale
+ 
++private fun currentVariantReleaseTag(): String {
++    val versionName = BuildConfig.VERSION_NAME
++    val tag = if (
++        versionName.startsWith("v", ignoreCase = true) ||
++        versionName.startsWith("b", ignoreCase = true)
++    ) {
++        versionName
++    } else {
++        "v$versionName"
++    }
++    val variantSuffix = "_${BuildConfig.UPDATE_VARIANT}"
++    return if (tag.endsWith(variantSuffix)) tag else "$tag$variantSuffix"
++}
++
+ @OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3ExpressiveApi::class)
+ @Composable
+ fun ChangelogScreen(
+     navController: NavController,
+     scrollBehavior: TopAppBarScrollBehavior,
+-    versionTag: String = "v${BuildConfig.VERSION_NAME}"
++    versionTag: String = currentVariantReleaseTag()
+ ) {
+     val context = LocalContext.current
+     var changelogSections by remember { mutableStateOf<List<ChangelogSection>>(emptyList()) }
+@@ -201,7 +215,7 @@
+                         showingCached = true
+                     }
+                 } else {
+-                    val changelogUrl = URL("https://github.com/vivizzz007/vivi-music/releases/download/$tag/changelog.json")
++                    val changelogUrl = URL("https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases/download/$tag/changelog.json")
+                     val connection = changelogUrl.openConnection() as HttpURLConnection
+                     connection.setRequestProperty("User-Agent", "ViviMusic-Changelog-App")
+                     connection.setRequestProperty("Accept", "application/json")
+@@ -253,11 +267,12 @@
+                     val array = JSONArray(json)
+                     val list = mutableListOf<ReleaseMetadata>()
+                     val outputFormatter = DateTimeFormatter.ofPattern("MMMM d, yyyy", Locale.getDefault())
++                    val variantSuffix = "_${BuildConfig.UPDATE_VARIANT}"
+ 
+                 for (i in 0 until array.length()) {
+                     val obj = array.getJSONObject(i)
+                     val tagName = obj.getString("tag_name")
+-                    if (!tagName.startsWith("v", ignoreCase = true)) continue
++                    if (!tagName.startsWith("v", ignoreCase = true) || !tagName.endsWith(variantSuffix)) continue
+ 
+                     val name = obj.optString("name", tagName)
+                     val publishedAt = obj.getString("published_at")
+diff --git a/app/src/main/kotlin/com/music/vivi/ui/screens/SettingsDropdownMenu.kt b/app/src/main/kotlin/com/music/vivi/ui/screens/SettingsDropdownMenu.kt
+--- a/app/src/main/kotlin/com/music/vivi/ui/screens/SettingsDropdownMenu.kt
++++ b/app/src/main/kotlin/com/music/vivi/ui/screens/SettingsDropdownMenu.kt
+@@ -118,7 +118,7 @@
+             IconButton(
+                 onClick = { 
+                     gitHubViewModel.toggleStar(context) {
+-                        uriHandler.openUri("https://github.com/vivizzz007/vivi-music")
++                        uriHandler.openUri("https://github.com/hirocomp/vivi-music-mod-dynamic-island")
+                     }
+                 }, 
+                 modifier = iconButtonModifier,
+@@ -167,7 +167,7 @@
+                 onClick = { 
+                     onDismissRequest()
+                     val targetApkName = if (BuildConfig.FLAVOR.contains("foss", ignoreCase = true)) "izzydroid-universal-foss-release.apk" else "vivi.apk"
+-                    val shareUrl = "https://github.com/vivizzz007/vivi-music/releases/latest/download/$targetApkName"
++                    val shareUrl = "https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases/latest/download/$targetApkName"
+                     val sendIntent = Intent(Intent.ACTION_SEND).apply {
+                         putExtra(Intent.EXTRA_TEXT, shareUrl)
+                         type = "text/plain"
+diff --git a/app/src/main/kotlin/com/music/vivi/MainActivity.kt b/app/src/main/kotlin/com/music/vivi/MainActivity.kt
+--- a/app/src/main/kotlin/com/music/vivi/MainActivity.kt
++++ b/app/src/main/kotlin/com/music/vivi/MainActivity.kt
+@@ -587,11 +587,11 @@
+         ) {
+             if (lastSeenStarPromptVersion != currentVersion && !hasStarredRepo && !isStarred) {
+                 ActionPromptDialog(
+-                    title = "Support ViviMusic \u2B50",
++                    title = "Support this Mod \u2B50",
+                     onDismiss = { setLastSeenStarPromptVersion(currentVersion) },
+                     onConfirm = {
+                         setLastSeenStarPromptVersion(currentVersion)
+-                        uriHandler.openUri("https://github.com/vivizzz007/vivi-music")
++                        uriHandler.openUri("https://github.com/hirocomp/vivi-music-mod-dynamic-island")
+                     },
+                     onCancel = { setLastSeenStarPromptVersion(currentVersion) },
+                     content = {
+@@ -602,12 +602,12 @@
+                             verticalArrangement = Arrangement.spacedBy(16.dp)
+                         ) {
+                             Text(
+-                                text = "If you enjoy using ViviMusic, would you consider starring our repository on GitHub?",
++                                text = "If you enjoy using this Mod and ViviMusic, consider starring both repositorys on GitHub!",
+                                 style = MaterialTheme.typography.bodyLarge,
+                                 color = MaterialTheme.colorScheme.onSurface
+                             )
+                             Text(
+-                                text = "It takes just a second and helps keep our open-source project alive and growing!",
++                                text = "It takes just a second and helps keep both open-source projects alive and growing!",
+                                 style = MaterialTheme.typography.bodyMedium,
+                                 color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                 textAlign = TextAlign.Center,
+diff --git a/app/src/main/kotlin/com/music/vivi/ui/screens/settings/AboutScreen.kt b/app/src/main/kotlin/com/music/vivi/ui/screens/settings/AboutScreen.kt
+--- a/app/src/main/kotlin/com/music/vivi/ui/screens/settings/AboutScreen.kt
++++ b/app/src/main/kotlin/com/music/vivi/ui/screens/settings/AboutScreen.kt
+@@ -140,7 +140,7 @@
+                 ),
+                 headlineContent = {
+                     Text(
+-                        text = stringResource(R.string.vivi_music_title),
++                        text = "VIVI MUSIC MOD⚡",
+                         color = MaterialTheme.colorScheme.onPrimaryContainer,
+                         style = MaterialTheme.typography.bodyLarge
+                     )
+@@ -155,7 +155,7 @@
+                 },
+                 trailingContent = {
+                     androidx.compose.material3.IconButton(
+-                        onClick = { uriHandler.safeOpenUri(context, "https://github.com/vivizzz007/vivi-music") },
++                        onClick = { uriHandler.safeOpenUri(context, "https://github.com/hirocomp/vivi-music-mod-dynamic-island") },
+                         colors = IconButtonDefaults.iconButtonColors(
+                             containerColor = MaterialTheme.colorScheme.primaryContainer
+                         )
+diff --git a/app/src/main/kotlin/com/music/vivi/github/network/GitHubService.kt b/app/src/main/kotlin/com/music/vivi/github/network/GitHubService.kt
+--- a/app/src/main/kotlin/com/music/vivi/github/network/GitHubService.kt
++++ b/app/src/main/kotlin/com/music/vivi/github/network/GitHubService.kt
+@@ -66,7 +66,7 @@
+         }
+     }
+ 
+-    suspend fun isRepoStarred(token: String, owner: String = "vivizzz007", repo: String = "vivi-music"): Boolean {
++    suspend fun isRepoStarred(token: String, owner: String = "hirocomp", repo: String = "vivi-music-mod-dynamic-island"): Boolean {
+         return try {
+             val response: HttpResponse = client.get("https://api.github.com/user/starred/$owner/$repo") {
+                 header("Authorization", "Bearer $token")
+@@ -80,7 +80,7 @@
+         }
+     }
+ 
+-    suspend fun starRepo(token: String, owner: String = "vivizzz007", repo: String = "vivi-music"): Boolean {
++    suspend fun starRepo(token: String, owner: String = "hirocomp", repo: String = "vivi-music-mod-dynamic-island"): Boolean {
+         return try {
+             val response = client.put("https://api.github.com/user/starred/$owner/$repo") {
+                 header("Authorization", "Bearer $token")
+@@ -94,7 +94,7 @@
+         }
+     }
+     
+-    suspend fun unstarRepo(token: String, owner: String = "vivizzz007", repo: String = "vivi-music"): Boolean {
++    suspend fun unstarRepo(token: String, owner: String = "hirocomp", repo: String = "vivi-music-mod-dynamic-island"): Boolean {
+         return try {
+             val response = client.delete("https://api.github.com/user/starred/$owner/$repo") {
+                 header("Authorization", "Bearer $token")

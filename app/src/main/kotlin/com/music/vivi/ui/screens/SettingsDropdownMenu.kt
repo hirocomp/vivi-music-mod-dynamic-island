@@ -118,7 +118,7 @@ fun SettingsDropdownMenu(
             IconButton(
                 onClick = { 
                     gitHubViewModel.toggleStar(context) {
-                        uriHandler.openUri("https://github.com/vivizzz007/vivi-music")
+                        uriHandler.openUri("https://github.com/hirocomp/vivi-music-mod-dynamic-island")
                     }
                 }, 
                 modifier = iconButtonModifier,

@@ -23,14 +23,13 @@ android {
 
     defaultConfig {
         applicationId = "com.luna.music"
-        // Match this build to release tags such as v6.0.9_V1.
-        val updateVariant = "V3"
-        buildConfigField("String", "UPDATE_VARIANT", "\"$updateVariant\"")
         minSdk = 26
         targetSdk = 37
-        versionCode = 78
+        versionCode = 79
         val betaVersionName = project.findProperty("betaVersionName") as String?
-        versionName = betaVersionName ?: "6.0.9"
+        versionName = betaVersionName ?: "7.0.0"
+        val updateVariant = "V3"
+        buildConfigField("String", "UPDATE_VARIANT", "\"$updateVariant\"")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true

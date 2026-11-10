@@ -268,7 +268,8 @@ class MainActivity : ComponentActivity() {
         override fun onServiceConnected(name: ComponentName?, service: IBinder?) {
             if (service is MusicBinder) {
                 try {
-                    playerConnection = PlayerConnection(this@MainActivity, service, database, lifecycleScope)
+                    playerConnection?.dispose()
+                    playerConnection = PlayerConnection(applicationContext, service, database, lifecycleScope)
                     Timber.tag("MainActivity").d("PlayerConnection created successfully")
                     // Connect Listen Together manager to player
                     listenTogetherManager.setPlayerConnection(playerConnection)
@@ -278,7 +279,8 @@ class MainActivity : ComponentActivity() {
                     lifecycleScope.launch {
                         delay(500)
                         try {
-                            playerConnection = PlayerConnection(this@MainActivity, service, database, lifecycleScope)
+                            playerConnection?.dispose()
+                            playerConnection = PlayerConnection(applicationContext, service, database, lifecycleScope)
                             listenTogetherManager.setPlayerConnection(playerConnection)
                         } catch (e2: Exception) {
                             Timber.tag("MainActivity").e(e2, "Failed to create PlayerConnection on retry")
@@ -327,9 +329,10 @@ class MainActivity : ComponentActivity() {
             isFinishing
         ) {
             stopService(Intent(this, MusicService::class.java))
-            unbindService(serviceConnection)
-            playerConnection = null
         }
+        listenTogetherManager.setPlayerConnection(null)
+        playerConnection?.dispose()
+        playerConnection = null
     }
 
     override fun onNewIntent(intent: Intent) {
@@ -344,7 +347,15 @@ class MainActivity : ComponentActivity() {
     @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
-        installSplashScreen()
+        val splashScreen = installSplashScreen()
+        var isStartupTimeoutReached by mutableStateOf(false)
+        lifecycleScope.launch {
+            delay(2000L)
+            isStartupTimeoutReached = true
+        }
+        splashScreen.setKeepOnScreenCondition {
+            playerConnection == null && !isStartupTimeoutReached
+        }
         super.onCreate(savedInstanceState)
         window.decorView.layoutDirection = View.LAYOUT_DIRECTION_LTR
         WindowCompat.setDecorFitsSystemWindows(window, false)
@@ -576,11 +587,11 @@ class MainActivity : ComponentActivity() {
         ) {
             if (lastSeenStarPromptVersion != currentVersion && !hasStarredRepo && !isStarred) {
                 ActionPromptDialog(
-                    title = "Support ViviMusic \u2B50",
+                    title = "Support this Mod \u2B50",
                     onDismiss = { setLastSeenStarPromptVersion(currentVersion) },
                     onConfirm = {
                         setLastSeenStarPromptVersion(currentVersion)
-                        uriHandler.openUri("https://github.com/vivizzz007/vivi-music")
+                        uriHandler.openUri("https://github.com/hirocomp/vivi-music-mod-dynamic-island")
                     },
                     onCancel = { setLastSeenStarPromptVersion(currentVersion) },
                     content = {
@@ -591,12 +602,12 @@ class MainActivity : ComponentActivity() {
                             verticalArrangement = Arrangement.spacedBy(16.dp)
                         ) {
                             Text(
-                                text = "If you enjoy using ViviMusic, would you consider starring our repository on GitHub?",
+                                text = "If you enjoy using this Mod and ViviMusic, consider starring both repositorys on GitHub!",
                                 style = MaterialTheme.typography.bodyLarge,
                                 color = MaterialTheme.colorScheme.onSurface
                             )
                             Text(
-                                text = "It takes just a second and helps keep our open-source project alive and growing!",
+                                text = "It takes just a second and helps keep both open-source projects alive and growing!",
                                 style = MaterialTheme.typography.bodyMedium,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                                 textAlign = TextAlign.Center,

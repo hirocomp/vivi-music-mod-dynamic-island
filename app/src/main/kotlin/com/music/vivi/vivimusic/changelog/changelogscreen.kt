@@ -100,12 +100,26 @@ import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 import java.util.Locale
 
+private fun currentVariantReleaseTag(): String {
+    val versionName = BuildConfig.VERSION_NAME
+    val tag = if (
+        versionName.startsWith("v", ignoreCase = true) ||
+        versionName.startsWith("b", ignoreCase = true)
+    ) {
+        versionName
+    } else {
+        "v$versionName"
+    }
+    val variantSuffix = "_${BuildConfig.UPDATE_VARIANT}"
+    return if (tag.endsWith(variantSuffix)) tag else "$tag$variantSuffix"
+}
+
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalMaterial3ExpressiveApi::class)
 @Composable
 fun ChangelogScreen(
     navController: NavController,
     scrollBehavior: TopAppBarScrollBehavior,
-    versionTag: String = "v${BuildConfig.VERSION_NAME}"
+    versionTag: String = currentVariantReleaseTag()
 ) {
     val context = LocalContext.current
     var changelogSections by remember { mutableStateOf<List<ChangelogSection>>(emptyList()) }
@@ -253,11 +267,12 @@ fun ChangelogScreen(
                     val array = JSONArray(json)
                     val list = mutableListOf<ReleaseMetadata>()
                     val outputFormatter = DateTimeFormatter.ofPattern("MMMM d, yyyy", Locale.getDefault())
+                    val variantSuffix = "_${BuildConfig.UPDATE_VARIANT}"
 
                 for (i in 0 until array.length()) {
                     val obj = array.getJSONObject(i)
                     val tagName = obj.getString("tag_name")
-                    if (!tagName.startsWith("v", ignoreCase = true)) continue
+                    if (!tagName.startsWith("v", ignoreCase = true) || !tagName.endsWith(variantSuffix)) continue
 
                     val name = obj.optString("name", tagName)
                     val publishedAt = obj.getString("published_at")
