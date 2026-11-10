@@ -113,11 +113,6 @@
 
 
 
-<hr>
-
-<h2>🛠️ How It Works</h2>
-
-
 
 ## 🎧・MOD VARIANTS GUIDE
 
