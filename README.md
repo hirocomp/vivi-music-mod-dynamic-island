@@ -13,7 +13,7 @@
     </a>
     <img src="https://img.shields.io/badge/Status-Modified%20Build-blue?style=for-the-badge" alt="Modified Build">
     <a href="LICENSE">
-      <img src="https://img.shields.io/github/license/vivizzz007/vivi-music?style=for-the-badge" alt="License">
+      <img src="https://img.shields.io/github/license/vivizzz007/vivi-music?style=for-the-badge" alt="Licens">
     </a>
   </p>
 </div>
