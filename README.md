@@ -100,10 +100,9 @@
     <td align="center">Limited ⚠️</td>
     <td align="center">Yes ✅</td>
     <td align="center">
-      <img src="https://cdn.simpleicons.org/realme/FFC915"
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Realme_logo.png"
      alt="realme UI"
-     height="32"
-     onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/9/91/Realme_logo.png'">
+     height="32">
     </td>
   </tr>
 </table>
