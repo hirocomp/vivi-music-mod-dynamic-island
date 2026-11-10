@@ -167,7 +167,7 @@ The best variant depends on which music player identities your device supports.
 >
 > | Variant | Package Identity | Status |
 > |:---:|:---|:---:|
-> | 🟢 V1 | Original | ✅ Unchanged |
+> | 🟢 V1 | Spotify | ✅ Unchanged |
 > | 🔵 V2 | QQ Music | 🔄 Updated |
 > | 🟣 V3 | Luna Music | ✅ Unchanged |
 
@@ -175,7 +175,7 @@ The best variant depends on which music player identities your device supports.
 
 ### 💡・WHICH VARIANT SHOULD I CHOOSE?
 
-- 🟢 **V1:** Try the original package identity.
+- 🟢 **V1:** Try the Spotify package identity.
 - 🔵 **V2:** Try the QQ Music package identity.
 - 🟣 **V3:** Try the Luna Music package identity.
 
