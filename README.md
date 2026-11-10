@@ -118,60 +118,74 @@
 <h2>🛠️ How It Works</h2>
 
 
+
 ## 🎧・MOD VARIANTS GUIDE
 
-> ✨ **One mod, multiple variants!**
+> ✨ **One mod, three variants, more compatibility!**
 >
-> Each variant uses a different package identity to provide compatibility with different devices and system features. Choose the one that best fits your device!
+> All variants are designed to enable **Dynamic Island-style music features**, including music pop-ups and capsule controls. The difference is the music player package identity each variant uses to achieve compatibility with different devices.
 
 ---
 
 ### 🟢 V1 — ORIGINAL
 **📦 Original Package Identity**
 
-- 🔹 Uses the original package identity.
-- 🔹 Provides the standard Vivi Music mod experience.
-- 🔹 A good starting point if you're unsure which variant to choose.
+- 🎵 Uses the original package identity.
+- 🏝️ Enables Dynamic Island-style music features on compatible devices.
+- ✨ Provides the standard Vivi Music mod experience.
 
 ### 🔵 V2 — QQ MUSIC
 **📦 QQ Music Package Identity**
 
-- 🔹 Uses the QQ Music package identity.
-- 🔹 Replaces the previous Apple Music-based variant.
-- 🔹 Introduced to improve compatibility with certain devices.
+- 🎵 Uses the QQ Music package identity.
+- 🏝️ Enables Dynamic Island-style music features through QQ Music compatibility.
+- 🔄 Replaces the previous Apple Music-based variant.
 
 ### 🟣 V3 — LUNA MUSIC
 **📦 Luna Music Player Package Identity**
 
-- 🔹 Makes your device recognize Vivi Music as Luna Music Player.
-- 🔹 Designed for devices supporting Luna Music's Dynamic Island-style features.
-- 🔹 Enables compatible music pop-ups and capsule controls.
+- 🎵 Uses the Luna Music Player package identity.
+- 🏝️ Enables Dynamic Island-style music features through Luna Music compatibility.
+- ✨ Designed for devices that support Luna Music Player's pop-ups and capsule controls.
 
-💡 **How does it work?**
+---
 
-If your device supports Dynamic Island-style features for Luna Music Player, V3 allows Vivi Music to take advantage of those features by using Luna's package identity.
+### ⚙️・HOW DOES IT WORK?
+
+Your device may recognize music apps differently depending on their package identity.
+
+Each variant makes Vivi Music use a different music player identity, allowing your device to recognize it as a compatible app and provide its **Dynamic Island-style features**, such as:
+
+- 🏝️ Dynamic Island-style music pop-ups.
+- 🎶 Music capsule controls.
+- 🎨 System-integrated music notifications.
+
+The best variant depends on which music player identities your device supports.
 
 ---
 
 ### ⚠️・IMPORTANT UPDATE
 
-> 🔄 **V2 has been changed!**
+> 🔄 **V2 has been updated!**
 >
-> Due to compatibility reasons, V2 now uses **QQ Music** instead of **Apple Music**.
+> Due to compatibility reasons, V2 now uses **QQ Music instead of Apple Music**.
 >
-> ✅ V1 — No changes  
-> 🔄 V2 — Apple Music → QQ Music  
-> ✅ V3 — No changes
+> | Variant | Package Identity | Status |
+> |:---:|:---|:---:|
+> | 🟢 V1 | Original | ✅ Unchanged |
+> | 🔵 V2 | QQ Music | 🔄 Updated |
+> | 🟣 V3 | Luna Music | ✅ Unchanged |
 
 ---
 
-### 💡・WHICH ONE SHOULD I CHOOSE?
+### 💡・WHICH VARIANT SHOULD I CHOOSE?
 
-- 🟢 **V1:** Want the original package identity? Start here.
-- 🔵 **V2:** Want to try the QQ Music-based variant? Choose this.
-- 🟣 **V3:** Want Dynamic Island-style integration through Luna Music Player? Choose this if your device supports it.
+- 🟢 **V1:** Try the original package identity.
+- 🔵 **V2:** Try the QQ Music package identity.
+- 🟣 **V3:** Try the Luna Music package identity.
 
-> 🚀 **Not sure?** Try the variant that best matches your device. If one doesn't work as expected, you can try another!
+> 🚀 **Having trouble?** If Dynamic Island-style features don't work with one variant, try another! Compatibility depends on your device and its supported music player integrations.
+
 
 
 <hr>
