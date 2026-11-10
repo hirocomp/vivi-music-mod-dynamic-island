@@ -49,6 +49,8 @@
 
 <hr>
 
+<hr>
+
 <h2>📱 Compatibility Matrix & Supported OS</h2>
 
 <table align="center" width="100%">
@@ -57,78 +59,55 @@
     <th align="center">Global ROM</th>
     <th align="center">China ROM</th>
     <th align="center">Operating Systems</th>
+    <th align="center">OS Logo</th>
   </tr>
   <tr>
     <td align="center">Xiaomi</td>
     <td align="center">Yes ✅</td>
     <td align="center">Yes ✅</td>
-    <td align="center">
-      <img src="https://shields.io" alt="Android">
-      <img src="https://shields.io" alt="HyperOS">
-    </td>
+    <td align="center"><img src="https://shields.io" alt="HyperOS"></td>
+    <td align="center"><img src="https://shields.io" alt="Xiaomi Logo"></td>
   </tr>
   <tr>
     <td align="center">Honor</td>
     <td align="center">Yes ✅</td>
     <td align="center">Yes ✅</td>
-    <td align="center">
-      <img src="https://shields.io" alt="Android">
-      <img src="https://shields.io" alt="MagicOS">
-    </td>
+    <td align="center"><img src="https://shields.io" alt="MagicOS"></td>
+    <td align="center"><img src="https://shields.io" alt="Android Logo"></td>
   </tr>
   <tr>
     <td align="center">Vivo / IQOO</td>
     <td align="center">Limited ⚠️</td>
     <td align="center">Yes ✅</td>
-    <td align="center">
-      <img src="https://shields.io" alt="Android">
-      <img src="https://shields.io" alt="OriginOS">
-    </td>
+    <td align="center"><img src="https://shields.io" alt="OriginOS"></td>
+    <td align="center"><img src="https://shields.io" alt="Vivo Logo"></td>
   </tr>
   <tr>
     <td align="center">Oppo</td>
     <td align="center">Limited ⚠️</td>
     <td align="center">Yes ✅</td>
-    <td align="center">
-      <img src="https://shields.io" alt="Android">
-      <img src="https://shields.io" alt="ColorOS">
-    </td>
+    <td align="center"><img src="https://shields.io" alt="ColorOS"></td>
+    <td align="center"><img src="https://shields.io" alt="Oppo Logo"></td>
   </tr>
   <tr>
     <td align="center">OnePlus</td>
     <td align="center">Limited ⚠️</td>
     <td align="center">Yes ✅</td>
-    <td align="center">
-      <img src="https://shields.io" alt="Android">
-      <img src="https://shields.io" alt="OxygenOS">
-    </td>
+    <td align="center"><img src="https://shields.io" alt="OxygenOS"></td>
+    <td align="center"><img src="https://shields.io" alt="OnePlus Logo"></td>
   </tr>
   <tr>
     <td align="center">Realme</td>
     <td align="center">Limited ⚠️</td>
     <td align="center">Yes ✅</td>
-    <td align="center">
-      <img src="https://shields.io" alt="Android">
-      <img src="https://shields.io" alt="realme UI">
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><strong>OS Logos</strong></td>
-    <td align="center" colspan="3">
-      <img src="https://shields.io" alt="Android">
-      <img src="https://shields.io" alt="Xiaomi/HyperOS">
-      <img src="https://shields.io" alt="Oppo/ColorOS">
-      <img src="https://shields.io" alt="OnePlus/OxygenOS">
-      <img src="https://shields.io" alt="Vivo/OriginOS">
-      <img src="https://shields.io" alt="Realme UI">
-    </td>
+    <td align="center"><img src="https://shields.io" alt="realme UI"></td>
+    <td align="center"><img src="https://shields.io" alt="Realme Logo"></td>
   </tr>
 </table>
 
 <blockquote>
   <p><strong>Help improve accuracy:</strong> If your device doesn't work even though it's listed as supported, please report it in Issues.</p>
 </blockquote>
-
 
 
 <hr>
