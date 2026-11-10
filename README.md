@@ -173,11 +173,6 @@ The best variant depends on which music player identities your device supports.
 
 ---
 
-### 💡・WHICH VARIANT SHOULD I CHOOSE?
-
-- 🟢 **V1:** Try the Spotify package identity.
-- 🔵 **V2:** Try the QQ Music package identity.
-- 🟣 **V3:** Try the Luna Music package identity.
 
 > 🚀 **Having trouble?** If Dynamic Island-style features don't work with one variant, try another! Compatibility depends on your device and its supported music player integrations.
 
