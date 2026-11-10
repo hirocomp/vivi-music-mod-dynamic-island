@@ -47,6 +47,8 @@
 
 <hr>
 
+<hr>
+
 <h2>📱 Compatibility Matrix & Supported OS</h2>
 
 <table align="center" width="100%">
@@ -110,11 +112,23 @@
       <img src="https://shields.io" alt="realme UI">
     </td>
   </tr>
+  <tr>
+    <td align="center"><strong>OS Logos</strong></td>
+    <td align="center" colspan="3">
+      <img src="https://shields.io" alt="Android">
+      <img src="https://shields.io" alt="Xiaomi/HyperOS">
+      <img src="https://shields.io" alt="Oppo/ColorOS">
+      <img src="https://shields.io" alt="OnePlus/OxygenOS">
+      <img src="https://shields.io" alt="Vivo/OriginOS">
+      <img src="https://shields.io" alt="Realme UI">
+    </td>
+  </tr>
 </table>
 
 <blockquote>
   <p><strong>Help improve accuracy:</strong> If your device doesn't work even though it's listed as supported, please report it in Issues.</p>
 </blockquote>
+
 
 
 <hr>
