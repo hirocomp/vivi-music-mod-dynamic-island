@@ -142,25 +142,6 @@ This unlocks UI behavior already present in the system interface.
 
 <hr>
 
-<div align="center">
-  <table border="0" cellpadding="15" cellspacing="0" width="85%">
-    <tr>
-      <td align="center">
-        <h3>🎉 New Feature: Automatic Updates! 🎉</h3>
-
-Good news! The VIVI Music Dynamic Island Mod now supports automatic updates.
-
-Enjoy a more convenient update experience! 🚀</p>
-        <br>
-        <a href="https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases">
-          <img src="https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge&logo=github&logoColor=white" alt="Download Release">
-        </a>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<br>
 
 <hr>
 
