@@ -811,7 +811,7 @@ suspend fun checkForUpdate(
 ) {
     withContext(Dispatchers.IO) {
         try {
-            val url = URL("https://api.github.com/repos/hirocomp/vivi-music-mod-dynamic-island/releases")
+            val url = URL("https://api.github.com/repos/vivizzz007/vivi-music/releases")
             val json = url.openStream().bufferedReader().use { it.readText() }
             val releases = JSONArray(json)
             

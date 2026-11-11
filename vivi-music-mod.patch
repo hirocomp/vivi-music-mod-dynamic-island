@@ -1,16 +1,19 @@
 diff --git a/gradle.properties b/gradle.properties
 --- a/gradle.properties
 +++ b/gradle.properties
-@@ -15 +15 @@
+@@ -13,4 +13,4 @@
+ #Sat Nov 19 15:59:34 CST 2022
+ 
 -org.gradle.jvmargs=-Xmx6144M -Dkotlin.daemon.jvm.options\="-Xmx6144M" -XX:+UseParallelGC
 +org.gradle.jvmargs=-Xmx8G -Dkotlin.daemon.jvm.options\="-Xmx8G" -XX:+UseParallelGC
+ android.useAndroidX=true
 diff --git a/app/build.gradle.kts b/app/build.gradle.kts
 --- a/app/build.gradle.kts
 +++ b/app/build.gradle.kts
 @@ -28,6 +28,8 @@
-         versionCode = 79
+         versionCode = 80
          val betaVersionName = project.findProperty("betaVersionName") as String?
-         versionName = betaVersionName ?: "7.0.0"
+         versionName = betaVersionName ?: "7.0.1"
 +        val updateVariant = "V1"
 +        buildConfigField("String", "UPDATE_VARIANT", "\"$updateVariant\"")
  

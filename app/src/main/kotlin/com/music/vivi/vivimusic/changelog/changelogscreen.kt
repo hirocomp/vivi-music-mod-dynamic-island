@@ -257,7 +257,7 @@ fun ChangelogScreen(
         isFetchingOldReleases = true
         coroutineScope.launch(Dispatchers.IO) {
             try {
-                val releasesUrl = URL("https://api.github.com/repos/hirocomp/vivi-music-mod-dynamic-island/releases")
+                val releasesUrl = URL("https://api.github.com/repos/vivizzz007/vivi-music/releases")
                 val connection = releasesUrl.openConnection() as HttpURLConnection
                 connection.setRequestProperty("User-Agent", "ViviMusic-Changelog-App")
                 connection.setRequestProperty("Accept", "application/vnd.github+json")

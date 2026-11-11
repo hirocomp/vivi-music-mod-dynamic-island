@@ -1211,4 +1211,10 @@
     <string name="album">Album</string>
     <string name="genre">Genre</string>
     <string name="audio_quality_high_desc">256+ kbps with Premium</string>
+    <string name="enable_settings_dropdown">Enable settings dropdown</string>
+    <string name="enable_settings_dropdown_desc">Show a Material 3 dropdown menu when clicking the settings icon on the home screen</string>
+    <string name="musixmatch_desc">The world\'s largest lyrics database (supports word-by-word and line-by-line synchronization)</string>
+    <string name="spotify_lyrics_desc">Requires connecting to a Spotify account (via the sp_dc cookie)</string>
+    <string name="total_listened">Total listened</string>
+    <string name="listening_breakdown">Listening breakdown</string>
 </resources>

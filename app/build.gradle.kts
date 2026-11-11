@@ -25,9 +25,9 @@ android {
         applicationId = "com.luna.music"
         minSdk = 26
         targetSdk = 37
-        versionCode = 79
+        versionCode = 80
         val betaVersionName = project.findProperty("betaVersionName") as String?
-        versionName = betaVersionName ?: "7.0.0"
+        versionName = betaVersionName ?: "7.0.1"
         val updateVariant = "V3"
         buildConfigField("String", "UPDATE_VARIANT", "\"$updateVariant\"")
 
