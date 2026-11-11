@@ -8,16 +8,22 @@
   <h1 style="border: none; text-decoration: none;">VIVI Music</h1>
   <h3>More Than Just Music — Your Ultimate Audio Experience</h3>
 
-  <p>
-    <a href="https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases">
-    </a>
-    <img src="https://img.shields.io/badge/Status-Modified%20Build-blue?style=for-the-badge" alt="Modified Build">
-    <a href="LICENSE">
-      <img src="https://img.shields.io/github/license/vivizzz007/vivi-music?style=for-the-badge" alt="License">
-    </a>
+  
+<p>
+  <a href="https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases/latest">
+    <img src="https://img.shields.io/github/v/release/hirocomp/vivi-music-mod-dynamic-island?style=for-the-badge&label=Latest%20Build&color=4CAF50" alt="Latest Build">
+  </a>
+  <a href="https://github.com/hirocomp/vivi-music-mod-dynamic-island/releases">
+    <img src="https://img.shields.io/github/downloads/hirocomp/vivi-music-mod-dynamic-island/total?style=for-the-badge&label=Downloads&color=0088CC" alt="Total Downloads">
+  </a>
+  <a href="https://github.com/hirocomp/vivi-music-mod-dynamic-island">
+    <img src="https://img.shields.io/github/stars/hirocomp/vivi-music-mod-dynamic-island?style=for-the-badge&label=Stars&color=yellow" alt="GitHub Stars">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/github/license/vivizzz007/vivi-music?style=for-the-badge" alt="License">
+  </a>
+</p>
 
-
-  </p>
 </div>
 
 <hr>
